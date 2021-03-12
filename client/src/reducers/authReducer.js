@@ -1,6 +1,6 @@
 import { SIGN_IN, SIGN_OUT } from "../actions/types";
 
-// true constant object -- no modify
+// all caps -> true constant object, no modify
 const INITIAL_STATE = {
   isSignedIn: null,
   userId: null
