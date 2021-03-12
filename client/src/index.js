@@ -6,6 +6,8 @@ import { createStore, applyMiddleware, compose } from "redux";
 import App from "./components/App";
 import reducers from "./reducers";
 
+// for debug mode:
+// add ?debug_session=<some string> to end of url
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducers, composeEnhancers(applyMiddleware()));
 
