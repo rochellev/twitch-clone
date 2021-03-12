@@ -1,7 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Streamy: A Streaming App
+
+### Rochelle Roberts Crain
+
+## App Description
+
+- Inspired by Twitch, Streamy offers a platform for users to stream.
+- Full CRUD implementation
+- Google Authentication for easy login
+- Udemy "Modern React with Redux"
+
+## Technologies Used
+
+- React
+  -- Class Component, make use life cycle methods to control rendering
+  -- Functional Components and hooks
+- Redux
+  -- State management
+  -- Reducers, Action Creators, Store initialization
+  -- Making asynchronous network calls
+- Google Authentication
+  -- Familiarize with common authentication flow
+- Redux Dev Tools
+  -- Greatly aids debugging
+  -- Clearly see state changes
+- Redux Forms
+  -- Take advantage of built in features
+  -- Less setup, develop faster
 
 ## Available Scripts
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In the project directory, you can run:
 
 ### `npm start`
