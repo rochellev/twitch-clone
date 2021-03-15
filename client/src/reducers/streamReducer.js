@@ -10,6 +10,8 @@ import {
 // use spread object operator bc need to create new object for redux
 export default (state = {}, action) => {
   switch (action.type) {
+    case FETCH_STREAMS:
+      return { ...state, ..._.mapKeys(action.payload, "id") };
     // fetch, edit, create stream same
     case FETCH_STREAM:
       return { ...state, [action.payload.id]: action.payload };
