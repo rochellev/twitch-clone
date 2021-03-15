@@ -9,8 +9,13 @@
 - Google Authentication for easy login
 - Udemy "Modern React with Redux"
 
-## Technologies Used
+## System Design
+## Key Components
+- React Web App: interface where users can create, view, modify and delete streams
+- Real Time Messaging (RTMP) Server: software (running locally) that allows users to stream video
+- Custom API Server: hosting list of streams available created with the Streamy app
 
+## Technologies Used
 - React
   -- Class Component, make use life cycle methods to control rendering
   -- Functional Components and hooks
