@@ -1,5 +1,6 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
+
 // capital letters - component where lower case is a function
 
 class StreamCreate extends React.Component {
