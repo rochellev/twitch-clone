@@ -13,7 +13,7 @@
 ## Key Components
 - React Web App: interface where users can create, view, modify and delete streams
 - Real Time Messaging (RTMP) Server: software (running locally) that allows users to stream video
-- Custom API Server: hosting list of streams available created with the Streamy app
+- Custom REST-ful API Server: hosting list of streams available created with the Streamy app
 
 ## Technologies Used
 - React
