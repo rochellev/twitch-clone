@@ -38,6 +38,24 @@
       "description": "a new stream was made",
       "userId": "118203496155371677123",
       "id": 7
+    },
+    {
+      "title": "a cool stream",
+      "description": "lolol",
+      "userId": "118203496155371677123",
+      "id": 8
+    },
+    {
+      "title": "a cool stream",
+      "description": "lolol",
+      "userId": "118203496155371677123",
+      "id": 9
+    },
+    {
+      "title": "a cool stream",
+      "description": "lolol",
+      "userId": "118203496155371677123",
+      "id": 10
     }
   ]
 }
