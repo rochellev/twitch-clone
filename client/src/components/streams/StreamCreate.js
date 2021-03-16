@@ -4,6 +4,7 @@ import { createStream } from "../../actions";
 import StreamForm from "./StreamForm";
 
 class StreamCreate extends React.Component {
+  // callback passed to StreamForm
   onSubmit = formValues => {
     this.props.createStream(formValues);
   };
@@ -17,5 +18,6 @@ class StreamCreate extends React.Component {
     );
   }
 }
+// validation handled by stream form
 
 export default connect(null, { createStream })(StreamCreate);

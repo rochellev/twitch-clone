@@ -32,6 +32,7 @@ class StreamForm extends React.Component {
   // redux from does event.preventDefault for you
   // get object that has all form values
   // handleSubmit is from redux-form, you pass your callback
+  // now gets it from parent component 
   onSubmit = formValues => {
     this.props.onSubmit(formValues);
   };
@@ -70,7 +71,7 @@ const validate = formValues => {
 
   return errors;
 };
-
+// does not need connect --it's parent does
 export default reduxForm({
   form: "streamForm",
   validate
