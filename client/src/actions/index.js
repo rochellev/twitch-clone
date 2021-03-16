@@ -8,6 +8,7 @@ import {
   DELETE_STREAM,
   EDIT_STREAM
 } from "./types";
+import history from "../history";
 export const signIn = userId => {
   return {
     type: SIGN_IN,
@@ -24,17 +25,17 @@ export const signOut = () => {
 // following REST-ful api
 export const createStream = formValues => async (dispatch, getState) => {
   const { userId } = getState().auth;
-  const response = await streams.post('/streams', { ...formValues, userId });
+  const response = await streams.post("/streams", { ...formValues, userId });
 
   dispatch({ type: CREATE_STREAM, payload: response.data });
   // do some programmatic navigation to get user back to root
-  // history.push('/');
+  history.push("/");
 };
 
 export const fetchStreams = () => async dispatch => {
-  const response = await streams.get('/streams')
-  dispatch({type: FETCH_STREAMS, payload: response.data})
-}
+  const response = await streams.get("/streams");
+  dispatch({ type: FETCH_STREAMS, payload: response.data });
+};
 
 export const fetchStream = id => async dispatch => {
   const response = await streams.get(`/streams/${id}`);
