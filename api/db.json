@@ -1,19 +1,43 @@
 {
-  "posts": [
+  "streams": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "My Stream",
+      "description": "This is a great stream.",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "Other Stream",
+      "description": "Here's some stream",
+      "id": 2
+    },
+    {
+      "title": "I Created This Stream",
+      "description": "This change was made by a PATCH request",
+      "userId": "111113427830310115815",
+      "id": 3
+    },
+    {
+      "title": "Me Streaming Component Reuse!",
+      "description": "This stream is about refactoring!!!",
+      "id": 4
+    },
+    {
+      "title": "rochelle title",
+      "description": "good stream",
+      "userId": "118203496155371677123",
+      "id": 5
+    },
+    {
+      "title": "hello new stream",
+      "description": "a new stream was made",
+      "userId": "118203496155371677123",
+      "id": 6
+    },
+    {
+      "title": "hello new stream",
+      "description": "a new stream was made",
+      "userId": "118203496155371677123",
+      "id": 7
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
