@@ -44,6 +44,8 @@ export const fetchStream = id => async dispatch => {
 };
 
 export const editStream = (id, formValues) => async dispatch => {
+  // PATCH request so don't destroy all properties -- no dropping properties
+  // some backend designs merge with PUT requests, but not a hard rule
   const response = await streams.patch(`/streams/${id}`, formValues);
 
   dispatch({ type: EDIT_STREAM, payload: response.data });
