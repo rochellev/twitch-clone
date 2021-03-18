@@ -27,3 +27,5 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 export default connect(mapStateToProps, { fetchStream })(StreamShow);
+
+// const NodeMediaServer = require('node-media-server');
