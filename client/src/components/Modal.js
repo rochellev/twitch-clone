@@ -5,6 +5,8 @@ import ReactDOM from "react-dom";
 //  or sister component with id=modal
 // not the direct child of component that calls it
 
+// Note: check Semantic UI for class names
+
 const Modal = props => {
   return ReactDOM.createPortal(
     <div onClick={props.onDismiss} className="ui dimmer modals visible active">
@@ -17,7 +19,7 @@ const Modal = props => {
         <div className="actions">{props.actions}</div>
       </div>
     </div>,
-    document.querySelector("#modal")
+    document.querySelector('#modal')
   );
 };
 
